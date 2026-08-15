@@ -2023,39 +2023,36 @@ html:not(.dark) .dropdown-item.active {
 
 /* ===== YuLe分享 Hermès Orange Theme ===== */
 :root {
-  --yule-orange:#F37021;
-  --yule-orange-dark:#D95D16;
+  --yule-orange: #F37021;
 }
 
-body {
+body,
+#app-scroll,
+.main-content {
   background: var(--yule-orange) !important;
 }
 
-#app-scroll, .main-content {
-  background: transparent !important;
+.home-title-block h1,
+.home-title-block .title,
+.home-title-block .subtitle {
+  color: #ffffff !important;
 }
 
-/* 顶部品牌区域 */
-.home-title-block, .home-title-block h1 {
-  color:#fff !important;
+.card,
+.nav-card,
+.site-card {
+  border-radius: 20px !important;
 }
 
-/* 卡片优化 */
-.site-card, .bookmark-card, .card {
-  border-radius:20px !important;
-  background:rgba(255,255,255,.96) !important;
-  box-shadow:0 10px 30px rgba(0,0,0,.15) !important;
-}
-
-/* 手机端卡片 */
-@media(max-width:768px){
-  .site-card, .bookmark-card, .card {
-    border-radius:18px !important;
-    margin-bottom:14px !important;
+@media (max-width: 768px) {
+  .cards,
+  .site-grid {
+    grid-template-columns: 1fr !important;
   }
-}
 
-/* logo */
-.logo img, .site-logo img {
-  border-radius:24px !important;
+  .card,
+  .nav-card,
+  .site-card {
+    margin-bottom: 14px !important;
+  }
 }
